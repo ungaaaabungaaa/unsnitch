@@ -1,0 +1,9 @@
+.multiclaude/
+node_modules/
+dist/
+.DS_Store
+
+# private / in progress
+marketing/
+assets/brand-reference.png
+video/

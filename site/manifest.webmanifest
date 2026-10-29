@@ -1,0 +1,22 @@
+{
+  "name": "Unsnitch — clean X links",
+  "short_name": "Unsnitch",
+  "description": "Strip share-tracking parameters (?s=, t=, a=) from X (Twitter) links. Share a post to Unsnitch and get the clean link back.",
+  "id": "./",
+  "start_url": "./share.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F3F2EF",
+  "theme_color": "#F3F2EF",
+  "categories": ["privacy", "utilities"],
+  "icons": [
+    { "src": "img/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "img/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "img/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ],
+  "share_target": {
+    "action": "share.html",
+    "method": "GET",
+    "params": { "title": "title", "text": "text", "url": "url" }
+  }
+}

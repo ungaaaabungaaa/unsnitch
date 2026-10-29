@@ -1,0 +1,41 @@
+/* Unsnitch brand v2 — design tokens. Single source for colour, type and radii. */
+:root {
+  /* Surfaces */
+  --us-canvas: #F3F2EF;          /* warm off-white page */
+  --us-card: #FAFAF8;            /* cards */
+  --us-line: rgba(17, 17, 17, .08);
+  --us-shadow: 0 1px 2px rgba(17, 17, 17, .04), 0 12px 40px -12px rgba(17, 17, 17, .14);
+  --us-glass: rgba(255, 255, 255, .55);  /* frosted pill, use with --us-blur */
+  --us-glass-line: rgba(255, 255, 255, .7);
+  --us-blur: saturate(160%) blur(18px);
+
+  /* Ink */
+  --us-ink: #111111;
+  --us-grey: #9B9B9B;            /* large secondary text */
+  --us-grey-soft: #C9C7C2;
+
+  /* Mosaic palette (pixel gradient) */
+  --us-orange: #F0703A;
+  --us-apricot: #F5A77A;
+  --us-cream: #EAD9C0;
+  --us-lavender: #E3D3F7;
+  --us-lilac: #C8A6F2;
+  --us-gradient: linear-gradient(120deg, #F0703A 0%, #F5A77A 30%, #EAD9C0 55%, #E3D3F7 78%, #C8A6F2 100%);
+
+  /* The only "alarm" colour: a subtle strike over tracking params */
+  --us-strike: #E0533D;
+
+  /* Type */
+  --us-font: Inter, "Helvetica Neue", Helvetica, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --us-mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, monospace;
+  --us-head-weight: 500;
+  --us-head-leading: 1.05;
+  --us-head-tracking: -0.02em;
+  --us-body-size: 13px;
+
+  /* Radii */
+  --us-r-card: 26px;             /* 24-28px */
+  --us-r-inner: 16px;
+  --us-r-pill: 999px;
+  --us-r-mark: 23.4%;            /* rounded-square mark (30/128) */
+}

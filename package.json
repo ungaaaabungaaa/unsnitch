@@ -1,0 +1,20 @@
+{
+  "name": "unsnitch",
+  "version": "1.0.0",
+  "description": "Stop X from snitching on your links. Strips share-tracking parameters from X (Twitter) links.",
+  "license": "MIT",
+  "author": "Meriç Kalkan",
+  "homepage": "https://github.com/xBrokkr/unsnitch",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xBrokkr/unsnitch.git"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test",
+    "build": "node scripts/build.mjs"
+  }
+}

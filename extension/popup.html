@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Unsnitch</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <div class="pill">
+      <img src="icons/icon-32.png" alt="" width="24" height="24">
+      <h1>unsnitch</h1>
+      <label class="switch" title="Turn Unsnitch on/off">
+        <input type="checkbox" id="enabled" checked>
+        <span class="slider" aria-hidden="true"></span>
+        <span class="sr-only">Enabled</span>
+      </label>
+    </div>
+  </header>
+
+  <main>
+    <p class="tagline">Stop X from snitching on your links.</p>
+
+    <section class="counter">
+      <span id="count">0</span>
+      <span id="count-label">links unsnitched</span>
+      <span id="status" class="status">Protecting your links on X</span>
+    </section>
+
+    <section class="paste">
+      <label for="input">Paste &amp; clean</label>
+      <textarea id="input" rows="3" spellcheck="false" placeholder="https://x.com/user/status/123?s=20&amp;t=…"></textarea>
+      <div class="row">
+        <button id="clean" type="button">Clean &amp; copy</button>
+        <span id="feedback" role="status"></span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a href="https://github.com/xBrokkr/unsnitch" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <a class="star" href="https://github.com/xBrokkr/unsnitch" target="_blank" rel="noopener noreferrer">★ Star on GitHub</a>
+  </footer>
+
+  <script src="core/clean.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

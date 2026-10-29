@@ -1,0 +1,45 @@
+name: New tracking parameter
+description: Report a tracking parameter on X (or another site) that Unsnitch should handle.
+labels: [tracker-param]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Redact the value** of any token (`?zz=XXX`). We only need the parameter name and where it shows up.
+  - type: input
+    id: param
+    attributes:
+      label: Parameter name
+      placeholder: zz
+    validations:
+      required: true
+  - type: input
+    id: site
+    attributes:
+      label: Site / domain
+      placeholder: x.com
+    validations:
+      required: true
+  - type: input
+    id: example
+    attributes:
+      label: Example URL (value redacted)
+      placeholder: https://x.com/user/status/123?zz=XXX
+    validations:
+      required: true
+  - type: textarea
+    id: where
+    attributes:
+      label: Where does it appear?
+      description: Which button, app (Android / iPhone / web) and approximate date you first saw it.
+  - type: textarea
+    id: meaning
+    attributes:
+      label: What do you think it encodes? (optional)
+      description: Links to sources are welcome.
+  - type: checkboxes
+    id: needed
+    attributes:
+      label: Safety check
+      options:
+        - label: I checked that the link still works with this parameter removed

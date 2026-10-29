@@ -1,0 +1,52 @@
+name: Bug report
+description: A link wasn't cleaned, something broke on X, or the extension misbehaves.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks! **Please remove any personal tokens** (`t=`, `a=` values) from links before pasting them. Replacing them with `XXX` is fine.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what happened instead.
+      placeholder: I clicked "Copy link" on a post and the clipboard still had ?s=20
+    validations:
+      required: true
+  - type: dropdown
+    id: how
+    attributes:
+      label: How did you copy or share?
+      multiple: true
+      options:
+        - X's "Copy link" button
+        - Ctrl/Cmd+C on selected text
+        - Share sheet
+        - Right-click "Copy clean link"
+        - Popup "Paste & clean"
+        - Address bar
+        - Userscript / bookmarklet / Shortcut / web app
+        - Other
+  - type: input
+    id: url
+    attributes:
+      label: Example URL (tokens redacted)
+      placeholder: https://x.com/user/status/123?s=20&t=XXX
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and version
+      placeholder: Chrome 131 / Firefox 133 / Safari + Userscripts
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Unsnitch version
+      placeholder: 1.0.0
+  - type: textarea
+    id: console
+    attributes:
+      label: Console errors (optional)
+      render: text
