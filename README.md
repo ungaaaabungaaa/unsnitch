@@ -27,8 +27,8 @@ A tiny, open-source browser extension that strips the share-tracking codes X (Tw
 When you hit **Copy link** or **Share** on a post, X adds tracking parameters to the URL:
 
 ```diff
-- https://x.com/0xBrokkr/status/2115719483620571136?a=Kq3vX9mPzR2tLw8nYb4c&s=19
-+ https://x.com/0xBrokkr/status/2115719483620571136
+- https://x.com/0xBrokkr/status/2115853762229076368?a=Kq3vX9mPzR2tLw8nYb4c&s=19
++ https://x.com/0xBrokkr/status/2115853762229076368
 ```
 
 Both links open the same post. The first one also carries a token tied to the share and a code for the app it came from. Anyone can see it, and X can use it to connect the people who click with the person who shared. Unsnitch removes those parameters before the link leaves your clipboard.

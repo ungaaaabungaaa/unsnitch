@@ -18,8 +18,8 @@ The tokens are opaque to us; X knows their meaning. The practical effect is that
 Example:
 
 ```
-https://x.com/0xBrokkr/status/2115719483620571136?a=Kq3vX9mPzR2tLw8nYb4c&s=19
-→ https://x.com/0xBrokkr/status/2115719483620571136
+https://x.com/0xBrokkr/status/2115853762229076368?a=Kq3vX9mPzR2tLw8nYb4c&s=19
+→ https://x.com/0xBrokkr/status/2115853762229076368
 ```
 
 ## The cleaning rule

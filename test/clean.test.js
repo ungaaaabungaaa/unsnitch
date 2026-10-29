@@ -5,8 +5,8 @@ const { cleanUrl, cleanText, isXHost } = require('../extension/core/clean.js');
 
 test('removes s / t / a share-tracking params', () => {
   assert.equal(
-    cleanUrl('https://x.com/0xBrokkr/status/2115719483620571136?a=Kq3vX9mPzR2tLw8nYb4c&s=19'),
-    'https://x.com/0xBrokkr/status/2115719483620571136'
+    cleanUrl('https://x.com/0xBrokkr/status/2115853762229076368?a=Kq3vX9mPzR2tLw8nYb4c&s=19'),
+    'https://x.com/0xBrokkr/status/2115853762229076368'
   );
   assert.equal(cleanUrl('https://x.com/a/status/1?s=20'), 'https://x.com/a/status/1');
   assert.equal(cleanUrl('https://x.com/a/status/1?s=46&t=AbC-123_xyz'), 'https://x.com/a/status/1');
@@ -85,7 +85,7 @@ test('garbage input returned unchanged', () => {
 
 test('already-clean URLs are idempotent', () => {
   const urls = [
-    'https://x.com/0xBrokkr/status/2115719483620571136',
+    'https://x.com/0xBrokkr/status/2115853762229076368',
     'https://x.com/search?q=hi&f=live',
     'https://x.com/a/status/1#m',
   ];
