@@ -27,8 +27,8 @@ A tiny, open-source browser extension that strips the share-tracking codes X (Tw
 When you hit **Copy link** or **Share** on a post, X adds tracking parameters to the URL:
 
 ```diff
-- https://x.com/FFBuncho/status/2115628706068926758?a=E-mbQ0quyOZVCVU3zFg&s=19
-+ https://x.com/FFBuncho/status/2115628706068926758
+- https://x.com/0xBrokkr/status/2115719483620571136?a=Kq3vX9mPzR2tLw8nYb4c&s=19
++ https://x.com/0xBrokkr/status/2115719483620571136
 ```
 
 Both links open the same post. The first one also carries a token tied to the share and a code for the app it came from. Anyone can see it, and X can use it to connect the people who click with the person who shared. Unsnitch removes those parameters before the link leaves your clipboard.
@@ -39,7 +39,7 @@ Both links open the same post. The first one also carries a token tied to the sh
 | --- | --- | --- |
 | `s` | `?s=19`, `?s=20`, `?s=46` | A code for the app or platform you shared from. Common reports say 19 is Android, 20 is iPhone and 46 is desktop web, but people report other numbers too and X doesn't document it. |
 | `t` | `&t=Xy3k…` | A share token, widely reported to be tied to the account that shared the link. |
-| `a` | `?a=E-mbQ0quyOZVCVU3zFg` | A newer share token, also reported to be tied to the sharer. |
+| `a` | `?a=Kq3vX9mPzR2tLw8nYb4c` | A newer share token, also reported to be tied to the sharer. |
 | `ref_src`, `ref_url`, `cn`, `refsrc`, `utm_*` | `?ref_src=twsrc%5Etfw` | Referral and campaign tags from embeds and emails. |
 
 Unsnitch removes **every** query parameter on X links **except** `q`, `f`, `pf` and `lf`, which search URLs need to keep working. The host, the path and any `#hash` stay exactly as they were. **Links to other sites are never modified.**

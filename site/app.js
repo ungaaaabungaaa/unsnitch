@@ -3,7 +3,7 @@
   'use strict';
   var core = window.UnsnitchCore;
   var $ = function (id) { return document.getElementById(id); };
-  var EXAMPLE = 'https://x.com/FFBuncho/status/2115628706068926758?a=E-mbQ0quyOZVCVU3zFg&s=19';
+  var EXAMPLE = 'https://x.com/0xBrokkr/status/2115719483620571136?a=Kq3vX9mPzR2tLw8nYb4c&s=19';
   var URL_RE = /https?:\/\/[^\s<>"'`]+/gi;
 
   // Names of params cleanUrl dropped from every X link in `text`.

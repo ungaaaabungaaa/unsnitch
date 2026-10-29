@@ -51,10 +51,10 @@ If your phone doesn't list it in the share sheet, open the Unsnitch web app, pas
 For any X link, delete everything from the `?` onward:
 
 ```
-https://x.com/FFBuncho/status/2115628706068926758?a=E-mbQ0quyOZVCVU3zFg&s=19
+https://x.com/0xBrokkr/status/2115719483620571136?a=Kq3vX9mPzR2tLw8nYb4c&s=19
                                                   ^ delete from here to the end
 ```
 
-Result: `https://x.com/FFBuncho/status/2115628706068926758`
+Result: `https://x.com/0xBrokkr/status/2115719483620571136`
 
 Exception: search links (`/search?q=...&f=live`) need `q`, `f`, `pf` and `lf` to work; keep those and drop the rest. If the link ends with a `#fragment`, keep that too.
