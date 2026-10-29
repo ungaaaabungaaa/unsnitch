@@ -20,4 +20,4 @@ jobs:
       - name: Create GitHub Release with zips
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh release create "$GITHUB_REF_NAME" dist/unsnitch-chrome.zip dist/unsnitch-firefox.zip --title "Unsnitch $GITHUB_REF_NAME" --generate-notes
+        run: gh release create "$GITHUB_REF_NAME" dist/unsnitch-chrome.zip dist/unsnitch-firefox.zip shortcut/Unsnitch.shortcut userscript/unsnitch.user.js --title "Unsnitch $GITHUB_REF_NAME" --generate-notes
