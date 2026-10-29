@@ -64,7 +64,7 @@ Unsnitch removes **every** query parameter on X links **except** `q`, `f`, `pf` 
   2. Open `chrome://extensions` and turn on **Developer mode** (top right).
   3. Click **Load unpacked** and select the `extension/` folder.
 
-You can also download the prebuilt `unsnitch-chrome.zip` from [Releases](https://github.com/xBrokkr/unsnitch/releases).
+Or grab the prebuilt `unsnitch-chrome.zip` from the [latest release](https://github.com/xBrokkr/unsnitch/releases/latest).
 
 ### Firefox
 
