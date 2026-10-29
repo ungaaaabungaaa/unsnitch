@@ -72,6 +72,9 @@ test('YouTube rules remove only share trackers and keep timestamps and playlists
   assert.equal(cleanUrl('HTTPS://WWW.YouTube.COM/watch?%73i=abc&si=def&t=42&SI=keep'),
     'HTTPS://WWW.YouTube.COM/watch?t=42&SI=keep');
   assert.equal(cleanText('Watch https://youtu.be/video?si=share&t=42.'), 'Watch https://youtu.be/video?t=42.');
+  // Empty pairs don't leave a dangling '?' or '&'.
+  assert.equal(cleanUrl('https://youtu.be/video?si=share&'), 'https://youtu.be/video');
+  assert.equal(cleanUrl('https://youtu.be/video?&si=share&&t=42'), 'https://youtu.be/video?t=42');
 });
 
 test('YouTube lookalikes, unsupported subdomains and non-HTTP URLs are untouched', () => {

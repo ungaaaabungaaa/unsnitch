@@ -1,3 +1,4 @@
+/* Copy of extension/core/clean.js — keep in sync (edit the extension copy, then re-copy here). */
 /*
  * Unsnitch core — strips X (Twitter) and supported sites' share-tracking parameters from links.
  *
@@ -69,7 +70,8 @@
 
     var kept = beforeHash.slice(qIdx + 1).split('&').filter(function (pair) {
       var key = decodeKey(pair.split('=')[0]);
-      return isX ? pair !== '' && KEEP[key] === true : rule.strip[key] !== true;
+      if (pair === '') return false; // drop empty pairs from '?&a' or 'a&&b'
+      return isX ? KEEP[key] === true : rule.strip[key] !== true;
     });
 
     return beforeHash.slice(0, qIdx) + (kept.length ? '?' + kept.join('&') : '') + hash;
