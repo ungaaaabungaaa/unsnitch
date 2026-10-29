@@ -170,6 +170,10 @@ PRs are welcome, especially new tracking parameters, other sites, a Safari port 
   </picture>
 </a>
 
+## Support
+
+Unsnitch is free and always will be. If it saved you from being tracked, a ⭐ on GitHub helps others find it, and you can [buy me a coffee ☕](https://buymeacoffee.com/merickalkaf).
+
 ## License
 
 [MIT](LICENSE) © 2026 Meriç Kalkan
