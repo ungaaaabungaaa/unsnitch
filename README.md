@@ -56,6 +56,12 @@ Unsnitch removes **every** query parameter on X links **except** `q`, `f`, `pf` 
 
 ## Install
 
+**Fastest, no developer mode needed** (while the store listings are in progress):
+
+- **Userscript:** install [`unsnitch.user.js`](https://raw.githubusercontent.com/xBrokkr/unsnitch/main/userscript/unsnitch.user.js) with Tampermonkey, Violentmonkey or the Userscripts app on Safari. It cleans copies, shares and the address bar.
+- **Bookmarklet:** works in any browser, nothing to install: [docs/bookmarklet.md](docs/bookmarklet.md).
+- **Web cleaner:** paste a link at [xBrokkr.github.io/unsnitch](https://xBrokkr.github.io/unsnitch/). On phones, see [iPhone and Android](docs/mobile.md).
+
 ### Chrome / Edge / Brave
 
 - **Chrome Web Store:** *coming soon* (`CHROME_WEB_STORE_URL`)
